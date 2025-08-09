@@ -8,6 +8,48 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.tool-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+				gap: 2rem;
+				margin: 2rem 0;
+			}
+			.tool-card {
+				border: 1px solid #eee;
+				border-radius: 8px;
+				overflow: hidden;
+				transition: transform 0.3s;
+			}
+			.tool-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+			}
+			.tool-card img {
+				width: 100%;
+				height: 180px;
+				object-fit: cover;
+				border-bottom: 1px solid #eee;
+			}
+			.tool-info {
+				padding: 1.5rem;
+			}
+			.free-tag {
+				background: #4CAF50;
+				color: white;
+				padding: 3px 8px;
+				border-radius: 4px;
+				font-size: 0.8rem;
+				font-weight: bold;
+			}
+			.tutorial-cta {
+				background: #f8f8f8;
+				padding: 2rem;
+				border-radius: 8px;
+				text-align: center;
+				margin: 3rem 0;
+			}
+		</style>
 	</head>
 	<body class="no-sidebar is-preload">
 		<div id="page-wrapper">
@@ -56,7 +98,7 @@
 										</div>
 										<div class="col-4 col-12-medium">
 											<section>
-												<a href="#no-code" class="image featured"><img src="images/bubble-io.jpg" alt="Bubble.io" /></a>
+												<a href="#no-code" class="image featured"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="No-code development" /></a>
 												<header class="second icon solid fa-mouse-pointer">
 													<h3>No-Code Builders</h3>
 													<p>Drag-and-drop app development</p>
@@ -65,7 +107,7 @@
 										</div>
 										<div class="col-4 col-12-medium">
 											<section>
-												<a href="#low-code" class="image featured"><img src="images/replit.jpg" alt="Replit" /></a>
+												<a href="#low-code" class="image featured"><img src="https://images.unsplash.com/photo-1614680376573-df3480f0c6ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Low-code development" /></a>
 												<header class="second icon solid fa-code">
 													<h3>Low-Code Options</h3>
 													<p>Minimal coding required</p>
@@ -74,7 +116,7 @@
 										</div>
 										<div class="col-4 col-12-medium">
 											<section>
-												<a href="#templates" class="image featured"><img src="images/glide-templates.jpg" alt="App Templates" /></a>
+												<a href="#templates" class="image featured"><img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="App templates" /></a>
 												<header class="second icon solid fa-copy">
 													<h3>Starter Templates</h3>
 													<p>Pre-built AI app structures</p>
@@ -95,7 +137,7 @@
 									<h3 id="no-code">No-Code AI App Builders</h3>
 									<div class="tool-grid">
 										<div class="tool-card">
-											<img src="images/bubble-io.jpg" alt="Bubble.io">
+											<img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Bubble.io">
 											<div class="tool-info">
 												<h4><a href="https://bubble.io/" target="_blank">Bubble.io</a></h4>
 												<ul>
@@ -103,12 +145,12 @@
 													<li>API connections to AI services</li>
 													<li>Free plan includes basic hosting</li>
 												</ul>
-												<span class="tool-meta">Free Limit: 2 apps, Bubble branding</span>
+												<span class="free-tag">Free Limit: 2 apps, Bubble branding</span>
 											</div>
 										</div>
 
 										<div class="tool-card">
-											<img src="images/glide.jpg" alt="Glide">
+											<img src="https://images.unsplash.com/photo-1633356122544-f134324a6cee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Glide Apps">
 											<div class="tool-info">
 												<h4><a href="https://www.glideapps.com/" target="_blank">Glide</a></h4>
 												<ul>
@@ -116,7 +158,20 @@
 													<li>AI data processing templates</li>
 													<li>PWA and mobile output</li>
 												</ul>
-												<span class="tool-meta">Free Limit: Public apps only</span>
+												<span class="free-tag">Free Limit: Public apps only</span>
+											</div>
+										</div>
+
+										<div class="tool-card">
+											<img src="https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Adalo">
+											<div class="tool-info">
+												<h4><a href="https://www.adalo.com/" target="_blank">Adalo</a></h4>
+												<ul>
+													<li>Mobile app builder</li>
+													<li>AI component marketplace</li>
+													<li>Test on real devices</li>
+												</ul>
+												<span class="free-tag">Free Limit: 50 records</span>
 											</div>
 										</div>
 									</div>
@@ -166,6 +221,11 @@
 													<td>Ready-to-deploy chatbot interface</td>
 													<td>Glide</td>
 												</tr>
+												<tr>
+													<td><a href="https://bubble.io/template/ai-content-generator" target="_blank">AI Content Generator</a></td>
+													<td>Complete writing assistant app</td>
+													<td>Bubble</td>
+												</tr>
 											</tbody>
 										</table>
 									</div>
@@ -175,6 +235,16 @@
 										<h3>New to AI App Development?</h3>
 										<p>Start with our beginner-friendly tutorial: <strong>"Build Your First AI App in 30 Minutes (No Coding)"</strong></p>
 										<a href="tutorials.html" class="button large">View Tutorial</a>
+									</section>
+
+									<!-- Newsletter Section -->
+									<section class="newsletter-box">
+										<h3>Get Weekly Tool Updates</h3>
+										<p>Subscribe to receive new free tools and templates every Friday</p>
+										<form class="newsletter-form">
+											<input type="email" placeholder="Your email address" required>
+											<button type="submit" class="button primary">Subscribe</button>
+										</form>
 									</section>
 								</section>
 						</div>
@@ -207,7 +277,9 @@
 						<div class="col-12">
 							<div id="copyright">
 								<ul class="menu">
-									<li>&copy; gaptrix. All content free to share</li><li>By <a href="#">Frekesh</a></li>
+									<li>&copy; 2023 gaptrix. All content free to share</li>
+									<li>Design: <a href="#">Frekesh</a></li>
+									<li>Images: <a href="https://unsplash.com" target="_blank">Unsplash</a></li>
 								</ul>
 							</div>
 						</div>
